@@ -1,0 +1,15 @@
+.toolbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 10px 0 16px;
+  }
+  .toolbar h2 { margin: 0; font-size: 18px; }
+  .hint { color: #666; font-size: 13px; }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+  }

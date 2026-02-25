@@ -1,0 +1,88 @@
+.card {
+    border: 1px solid #eee;
+    border-radius: 14px;
+    background: #fff;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+  }
+  
+  .media { display: flex; flex-direction: column; gap: 10px; }
+  
+  .main {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #f4f4f4;
+  }
+  
+  .thumbs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  
+  .thumb {
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 0 0 auto;
+  }
+  
+  .thumb img {
+    width: 56px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .title { margin: 0; font-size: 16px; line-height: 1.2; }
+  .desc { margin: 0; color: #555; font-size: 13px; line-height: 1.35; }
+  
+  .meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .price { font-weight: 700; font-size: 15px; }
+  
+  .rating { display: flex; align-items: center; gap: 8px; }
+  .stars { display: inline-flex; gap: 2px; }
+  .star { color: #ddd; font-size: 16px; line-height: 1; }
+  .star.filled { color: #ffb400; }
+  .num { font-size: 13px; color: #666; }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 4px;
+  }
+  
+  .link { font-size: 13px; text-decoration: none; color: #1a73e8; }
+  .share { display: flex; gap: 8px; }
+  
+  button {
+    border: 1px solid #e5e5e5;
+    background: #fafafa;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  button:hover { background: #f0f0f0; }

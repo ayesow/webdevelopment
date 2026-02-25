@@ -1,0 +1,10 @@
+<section class="toolbar">
+    <h2>Products</h2>
+    <span class="hint">Open product page and share via WhatsApp/Telegram</span>
+  </section>
+  
+  <div class="grid">
+    @for (product of products; track product.id) {
+      <app-product-card [product]="product"></app-product-card>
+    }
+  </div>
